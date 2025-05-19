@@ -18,3 +18,19 @@ body{
     min-height: auto;
     color: green;
 }
+
+.footer {
+    background-color: #72447071;
+    color: rgb(234, 255, 0);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Font Awesome 6 Free';
+}
+
+.footer p {
+    margin: 0;
+    font-size: 15px;
+}
