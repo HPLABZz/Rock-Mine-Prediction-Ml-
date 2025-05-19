@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
-from sonar import predict_result_KNN, predict_result_RF
+from sonar import predict_result_KNN
+from sonar import predict_result_RF
 
 app = Flask(__name__)
 
