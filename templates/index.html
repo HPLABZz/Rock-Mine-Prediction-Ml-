@@ -1,0 +1,19 @@
+
+    <html>
+    <head>
+        <title>Rock vs Mine Prediction</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
+    </head>
+    <body>
+        <h2>Prediction Results</h2>
+         <div class="result_box">
+            {% if final_resultKNN %}
+                {{ final_resultKNN }}
+            {% endif %}
+            <br>
+            {% if final_resultRF %}
+                {{ final_resultRF }}
+            {% endif %}
+        </div>
+    </body>
+    </html>
