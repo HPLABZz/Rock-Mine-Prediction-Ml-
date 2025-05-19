@@ -1,5 +1,4 @@
 from flask import Flask
-from flask import Flaskrender_template_string
 from flask import render_template
 from sonar import predict_result_KNN, predict_result_RF
 
