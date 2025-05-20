@@ -1,24 +1,34 @@
+<html>
+<head>
+    <title>Rock vs Mine Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h2>Prediction Results</h2>
 
-    <html>
-    <head>
-        <title>Rock vs Mine Prediction</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
-    </head>
-    <body>
-        <h2>Prediction Results</h2>
-         <div class="result_box">
-            {% if final_resultKNN %}
-                {{ final_resultKNN }}
-            {% endif %}
-            <br>
-            {% if final_resultRF %}
-                {{ final_resultRF }}
-            {% endif %}
+            <div class="result-box">
+                {% if final_resultKNN %}
+                    {{ final_resultKNN }}
+                {% endif %}
+            </div>
+
+            <div class="result-box">
+                {% if final_resultRF %}
+                    {{ final_resultRF }}
+                {% endif %}
+            </div>
         </div>
+    </div>
 
-        <footer class="footer">
-            <p>&copy; <span id="year"></span> <b>Himanshu Patel. <s>All Rights Reserved</s></b></p>
-        </footer>
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> <b>Himanshu Patel. <span style="text-decoration: line-through;">All Rights Reserved</span></b></p>
+    </footer>
 
-    </body>
-    </html>
+    <script>
+        // Add current year to footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

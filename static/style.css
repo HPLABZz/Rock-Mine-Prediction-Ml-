@@ -1,36 +1,54 @@
-body{
-    color: rgb(0, 0, 0);
-    font-size: 32px;
-    font-weight: 500;
-    background-color: rgba(0, 255, 255, 0.233);
-    font-family: sans-serif;
-    text-align: center;
-    padding: 50px;
-}
+* {
+            box-sizing: border-box;
+        }
 
-.result-box{
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: fit-content;
-    min-height: auto;
-    color: green;
-}
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+            font-weight: 500;
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            font-family: sans-serif;
+            text-align: center;
+        }
 
-.footer {
-    background-color: #72447071;
-    color: rgb(234, 255, 0);
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-family: 'Font Awesome 6 Free';
-}
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+        }
 
-.footer p {
-    margin: 0;
-    font-size: 15px;
-}
+        .container {
+            padding-bottom: 25px;
+            background-color: rgba(122, 151, 151, 0.091);
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 5px rgba(24, 24, 24, 0.5);
+            width: 40%;
+        }
+
+        .result-box {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid rgb(139, 139, 139);
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px 5px rgb(139, 139, 139);
+        }
+
+        .footer {
+            background-color: #72447071;
+            color: rgb(234, 255, 0);
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 18px;
+        }
