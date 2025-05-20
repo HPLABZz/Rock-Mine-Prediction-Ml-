@@ -20,21 +20,19 @@
             height: 100vh;
             color: white;
         }
-
+        
         .container {
             padding-bottom: 25px;
-            background-color: rgba(122, 151, 151, 0.091);
-            border-radius: 10px;
-            box-shadow: 0px 0px 5px 5px rgba(24, 24, 24, 0.5);
             width: 40%;
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.3);
         }
 
         .result-box {
             margin: 10px;
             padding: 10px;
-            border: 1px solid rgb(139, 139, 139);
+            border: 1px solid rgba(139, 139, 139, .5);
             border-radius: 15px;
-            box-shadow: 0px 0px 5px 5px rgb(139, 139, 139);
         }
 
         .footer {
