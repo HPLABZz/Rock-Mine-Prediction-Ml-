@@ -72,7 +72,7 @@ def predict_result_RF():
         pred_knn = knn_model.predict(input_scaled)
         pred_rf = rf_model.predict(input_scaled)
         # Random Forest Prediction
-        if pred_rf[0]=='R':return "Random Forest Prediction: The object is Mine"
+        if pred_rf[0]=='R':return "Random Forest Prediction: The object is Rock"
         else:       return "RandomForest Prediction: The object is Mine"
     else:
         print("Invalid input: Expected 60 features only.") 
